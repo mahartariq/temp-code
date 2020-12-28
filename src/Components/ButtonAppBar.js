@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appbar:{
-    backgroundColor:"#8ACA2B" 
-  ,height:"80px",
-  color:'black',
+    backgroundColor:"#737270", 
+  height:"60px",
+  color:'white',
 },
 }));
 
