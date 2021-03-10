@@ -55,7 +55,7 @@ if(loading){
                     <Typography variant="subtitle2" gutterBottom style={{color:"#737270"}}>
                         Confirmed Cases
       </Typography>
-                    <Typography variant="h3" gutterBottom style={{color:"#737270"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>
@@ -66,7 +66,7 @@ if(loading){
                     <Typography variant="subtitle2" gutterBottom style={{color:"red"}}>
                         Total Deaths
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"red"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load} 
                          </Typography></div></Paper>
             <Paper elevation={3}>
@@ -74,7 +74,7 @@ if(loading){
                     <Typography variant="subtitle2" gutterBottom style={{color:"green"}}>
                         Total Recovered
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"green"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>
@@ -84,7 +84,7 @@ if(loading){
                     <Typography variant="subtitle2" gutterBottom style={{color:"#8080FF"}}>
                         Active Cases
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"#8080FF"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>
@@ -94,7 +94,7 @@ if(loading){
                     <Typography variant="subtitle2" gutterBottom style={{color:"#99001a"}}>
                         Serious, Critical
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"#99001a"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>

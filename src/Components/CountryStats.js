@@ -52,10 +52,10 @@ if(loading){
         <div className={classes.root}>
             <Paper elevation={3}>
                 <div className={classesT.root}>
-                    <Typography variant="subtitle2" gutterBottom style={{color:"#737270"}}>
+                    <Typography variant="subtitle2" gutterBottom >
                         Confirmed Cases
       </Typography>
-                    <Typography variant="h3" gutterBottom style={{color:"#737270"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>
@@ -63,38 +63,28 @@ if(loading){
 
             <Paper elevation={3}>
                 <div className={classesT.root}>
-                    <Typography variant="subtitle2" gutterBottom style={{color:"red"}}>
+                    <Typography variant="subtitle2" gutterBottom >
                         Total Deaths
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"red"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load} 
                          </Typography></div></Paper>
             <Paper elevation={3}>
                 <div className={classesT.root}>
-                    <Typography variant="subtitle2" gutterBottom style={{color:"green"}}>
+                    <Typography variant="subtitle2" gutterBottom >
                         Total Recovered
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"green"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>
             </Paper>
             <Paper elevation={3}>
                 <div className={classesT.root}>
-                    <Typography variant="subtitle2" gutterBottom style={{color:"#8080FF"}}>
+                    <Typography variant="subtitle2" gutterBottom >
                         Active Cases
       </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"#8080FF"}}>
-                    {load}
-      </Typography>
-                </div>
-            </Paper>
-            <Paper elevation={3}>
-                <div className={classesT.root}>
-                    <Typography variant="subtitle2" gutterBottom style={{color:"#99001a"}}>
-                        Serious, Critical
-      </Typography>
-                    <Typography variant="h4" gutterBottom style={{color:"#99001a"}}>
+                    <Typography variant="h4" gutterBottom >
                     {load}
       </Typography>
                 </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import NativeSelect from '@material-ui/core/NativeSelect';
 //import CountryData from './CountryData';
 import CountryStats from './CountryStats';
+import Chart from './Chart';
 
 export const CountryPicker = () => {
 
@@ -13,7 +14,7 @@ export const CountryPicker = () => {
             //          csetload(true);
             const cresponse = await fetch('https://disease.sh/v3/covid-19/countries');
             const cdata = await cresponse.json();
-            console.log(cdata);
+        //    console.log(cdata);
             setcdata(cdata);
             //  csetload(false);
         } fetchcdata();
@@ -25,15 +26,18 @@ export const CountryPicker = () => {
 
     return (
         <div>
-
+            <br></br>
             <NativeSelect id="select" onChange={(e) =>{ cc=e.target.value;
             index = ccdata.findIndex(x=>x.country===cc);
                 setIndex(index);
             }}>
                 {ccdata && ccdata.map(({ country }, index) => <option key={index} value={country}>{country}</option>)}
             </NativeSelect>
-            <br></br>
+            <br></br><br></br><br></br>
             <CountryStats val={index} />
+            <br></br>
+            <br></br><br></br>
+            <Chart val={index}/>
         </div>
     )
 }
